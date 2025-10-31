@@ -41,7 +41,7 @@ a:hover{
 }
 
 h3{
-  font-size: 40px;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
@@ -272,7 +272,31 @@ h3{
 
 .kpis .container .kpi-title{
   font-weight: 700;
-  font-size: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.kpis .container .kpi-title::before {
+  content: "BY THE NUMBERS";
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  background-color: var(--primary2);
+  border: 1px solid var(--primary-border);
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  width: fit-content;
+}
+
+.kpis .container .kpi-subtitle{
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 1.05rem;
 }
 
 .kpis .container .kpi-grid{
@@ -347,10 +371,14 @@ h3{
 }
 
 .how .how-title h3 {
-  font-size: 2.2rem;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 12px;
+}
+
+.how .how-title span{
+  color: var(--primary);
+  font-weight: 700;
 }
 
 .how .how-title::before {
