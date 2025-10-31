@@ -1,0 +1,75 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+      <!-- Columna izquierda: título y CTA -->
+      <div class="hero-left">
+        <h1 class="hero-title">
+          Delayed or cancelled flight?
+          <br />
+          <span class="highlight">Claim up to 600€</span>
+        </h1>
+
+        <p class="subtitle">
+          Free eligibility check in 30 seconds. No paperwork. No win, no fee.
+        </p>
+
+        <div class="cta-buttons" role="group" aria-label="Primary actions">
+          <a class="btn btn-primary" href="#form" aria-label="Check how much you can get">
+            Check how much you can get
+          </a>
+          <a
+            class="btn btn-whatsapp"
+            href="https://wa.me/[[PHONE_INTL]]?text=I%20want%20to%20check%20my%20EU261%20compensation"
+            target="_blank"
+            rel="noopener nofollow"
+            aria-label="Open WhatsApp chat"
+          >
+            WhatsApp
+          </a>
+        </div>
+
+        <ul class="trust-bullets" aria-label="Trust indicators">
+          <li>No win, no fee</li>
+          <li style="margin: 0 20px;">EU261 compliant</li>
+          <li>Fast updates</li>
+        </ul>
+      </div>
+
+      <!-- Columna derecha: formulario -->
+      <div class="hero-right">
+        <div class="form-card" id="form" aria-labelledby="form-title">
+          <h2 id="form-title">Check your eligibility</h2>
+
+          <form class="lead-form" novalidate>
+            <label for="from">From</label>
+            <input id="from" name="from" type="text" placeholder="Madrid (MAD)" required />
+
+            <label for="to">To</label>
+            <input id="to" name="to" type="text" placeholder="London (LHR)" required />
+
+            <label for="issue">What happened?</label>
+            <select id="issue" name="issue" required>
+              <option value="" disabled selected>Select</option>
+              <option value="Delayed ≥3h">Delay ≥ 3h</option>
+              <option value="Cancelled">Cancelled</option>
+              <option value="Overbooked">Overbooked / Denied boarding</option>
+              <option value="Missed connection">Missed connection</option>
+            </select>
+
+            <label for="whatsapp">WhatsApp number</label>
+            <input id="whatsapp" name="whatsapp" type="tel" placeholder="+34 600 123 456" required />
+
+            <label class="consent">
+              <input id="consent" name="consent" type="checkbox" required />
+              <span>I authorise [[AgencyName]] to contact me via WhatsApp about my claim.</span>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Check my compensation</button>
+
+            <p class="form-note">
+              By submitting you agree to our <a href="/privacy" rel="nofollow">Privacy Policy</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+  </div>
+</section>

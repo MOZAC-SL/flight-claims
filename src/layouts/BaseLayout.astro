@@ -1,0 +1,33 @@
+---
+const { title = '[[AgencyName]]', description = 'EU261 flight compensation up to €600. No win, no fee.' } = Astro.props;
+import "../styles/global.css";
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" />
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.example.com/" />
+    <meta property="og:image" content="https://www.example.com/og-image.jpg" />
+    <!-- JSON-LD Organization -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"[[AgencyName]]",
+      "url":"https://www.example.com/",
+      "logo":"https://www.example.com/logo.png"
+    }
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
